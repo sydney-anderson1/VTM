@@ -1,6 +1,16 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block body %}
 
-{% block title %} Welcome to the home page {% endblock %}
+<h1>My List of Friends</h1>
+<hr />
+<p>Be my friend:</p>
+<form action="/add_friend" method="POST">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname" />
 
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname" />
 
-{% block body %} Hello world! {% endblock %}
+    <input type="submit" id="submit" value="I'll be your friend" />
+</form>
+
+{% endblock %}
