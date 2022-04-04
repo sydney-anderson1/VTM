@@ -1,6 +1,20 @@
 {% extends 'base.html' %}
 
-{% block title %} Welcome to Mike's Page {% endblock %}
+{% block title %} Estimation {% endblock %}
 
 
-{% block body %} Estimation {% endblock %}
+{% block body %}
+
+<h2>Calulate an Estimate</h2>
+<form action="/estimate" method="POST">
+    <label for="radius">Radius:</label>
+    <input type="text" id="radius" name="radius" />
+    <br>
+    <label for="height">Height:</label>
+    <input type="text" id="height" name="height" />
+    <br>
+    <input type="submit" id="Submit" name="Calculate" />
+</form>
+
+
+{% endblock %}

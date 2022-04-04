@@ -6,20 +6,27 @@
     <title>{% block title %} {% endblock%}</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}">
 </head>
+
+
 <body>
     <div>
         <h1>Vertical Tank Maintenance</h1>
         <hr>
         <br>
-        <a href="/index">Home</a>
-        <br>
-        <a href="/about">About</a>
-        <br>
-        <a href="/estimate">Estimate</a>
+        <h2>
+            <a href=/>Home</a>
+            <a href=/about>About</a>
+            <a href=/estimate>Estimate</a>
+         </h2>   
         {% block body %}
 
         {% endblock %}
 
+    </div>
+    <br>
+    <br>
+    <div>
+        <div class="footer">© VTM 2020</div>
     </div>
 </body>
 </html>
