@@ -1,6 +1,6 @@
 import app
 
-def test_TotalCost(height, radius):
+def test_TotalCost():
     """
     GIVEN a user enters the height and radius
     WHEN those amounts are passed through this function
