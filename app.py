@@ -41,4 +41,4 @@ def add_inputs():
     return render_template('estimate.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
