@@ -32,13 +32,13 @@ def estimate():
 def add_inputs():
     if request.method == 'POST':
         form = request.form
-        radius = float(form['radius']
+        radius = float(form['radius'])
         height = float(form['height'])
 
         tankCost = TotalCost(height, radius)
         
         return render_template('estimate.html', pageTitle='Estimate', estimate=Cost)
-    return render_template('estimate.html')
+    return render_template('estimate.html', pageTitle='estimate')
 
 if __name__ == '__main__':
     app.run(debug=False)
